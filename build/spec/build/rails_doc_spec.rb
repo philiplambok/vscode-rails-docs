@@ -61,6 +61,7 @@ RSpec.describe Build::RailsDoc do
       '/Users/philiplambok/Codes/ruby/rails/doc/rdoc/classes/ActiveSupport/CachingKeyGenerator.html',
       '/Users/philiplambok/Codes/ruby/rails/doc/rdoc/classes/ActiveSupport/Concern.html',
       '/Users/philiplambok/Codes/ruby/rails/doc/rdoc/classes/ActiveSupport/LogSubscriber.html',
+      '/Users/philiplambok/Codes/ruby/rails/doc/rdoc/classes/ActiveSupport/LogSubscriber.html',
       '/Users/philiplambok/Codes/ruby/rails/doc/rdoc/classes/ActiveSupport/LogSubscriber/Another.html'
     ]
   end

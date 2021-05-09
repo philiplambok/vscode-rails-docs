@@ -36,9 +36,12 @@ module Build
         classes.push(class_name)
       end
       data = []
+      commands = []
       classes.each do |class_data|
         url_path = class_data.gsub('::', '/')
         command = class_data.gsub('::', '')
+        next if commands.include?(command)
+        commands.push(command)
         data.push({
                     class_name: class_data,
                     variable: "railsDocs#{command}",
