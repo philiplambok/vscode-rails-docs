@@ -1,7 +1,7 @@
 {
   "name": "vscode-rails-docs",
-	"displayName": "vscode-rails-docs",
-	"description": "The rails docs for vscode",
+	"displayName": "Rails Docs",
+	"description": "Easily access Rails API docs pages from within VSCode.",
 	"publisher": "philiplambok",
 	"icon": "img/icon.png",
 	"version": "1.0.0",
