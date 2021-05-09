@@ -8,4 +8,4 @@ module Build
   # Your code goes here...
 end
 
-Build::RailsDoc.new.call
+Build::RailsDoc.new.run_the_build

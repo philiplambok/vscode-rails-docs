@@ -32,7 +32,7 @@ module Build
         path_array = path.split('classes/')
         class_name = path_array[1]
         class_name.slice!('.html') if class_name.include?('.html')
-        class_name.sub!('/', '::')
+        class_name.gsub!('/', '::')
         classes.push(class_name)
       end
       data = []
@@ -46,6 +46,11 @@ module Build
                     url: "https://api.rubyonrails.org/classes/#{url_path}.html"
                   })
       end
+      data
+    end
+
+    def run_the_build
+      data = call
       # build the extension.js
       lines = []
       data.each do |item|
@@ -84,7 +89,6 @@ module Build
       lines.pop
       lines.push(last_line)
       gsub_file(PACKAGE_JSON_PATH, initial_line, lines.join(''))
-      data
     end
   end
 end
