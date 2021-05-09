@@ -2,7 +2,10 @@
   "name": "vscode-rails-docs",
 	"displayName": "vscode-rails-docs",
 	"description": "The rails docs for vscode",
-	"version": "0.0.1",
+	"publisher": "philiplambok",
+	"icon": "img/icon.png",
+	"version": "1.0.0",
+	"repository": "https://github.com/philiplambok/vscode-rails-docs",
 	"engines": {
 		"vscode": "^1.55.0"
 	},
