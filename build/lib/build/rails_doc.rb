@@ -57,7 +57,7 @@ module Build
         ext_code = create_ext_command(item[:variable], item[:command], item[:url])
         lines.push(ext_code)
       end
-      initial_line = '  // Insert the build code in here'
+      initial_line = '  function activate() {'
       updated_line = lines.join('')
       gsub_file(EXTENSION_JS_PATH, initial_line, updated_line)
       # build the package.json

@@ -2,7 +2,7 @@ Arguments:
   /Users/philiplambok/.nvm/versions/node/v15.2.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js lint
 
 PATH: 
-  /usr/local/opt/openjdk/bin:/Users/philiplambok/.cargo/bin:/usr/local/opt/mysql@5.7/bin:/Users/philiplambok/.nvm/versions/node/v15.2.0/bin:/usr/local/var/rbenv/shims:/Users/philiplambok/.rbenv/bin:/usr/local/var/rbenv/shims:/Users/philiplambok/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/openjdk/bin:/Users/philiplambok/.cargo/bin:/usr/local/opt/mysql@5.7/bin:/Users/philiplambok/.nvm/versions/node/v15.2.0/bin:/usr/local/var/rbenv/shims:/Users/philiplambok/.rbenv/bin:/Users/philiplambok/.rbenv/shims:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+  /usr/local/opt/openjdk/bin:/Users/philiplambok/.cargo/bin:/usr/local/opt/mysql@5.7/bin:/Users/philiplambok/.nvm/versions/node/v15.2.0/bin:/usr/local/var/rbenv/shims:/Users/philiplambok/.rbenv/bin:/Users/philiplambok/.rbenv/shims:/Users/philiplambok/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 
 Yarn version: 
   1.22.10
@@ -10901,7 +10901,7 @@ npm manifest:
   				"command": "vscode-rails-docs.railsDocsRailsConsoleBacktraceCleaner",
   				"category": "Rails Docs",
   				"title": "Rails::Console::BacktraceCleaner"
-  			},
+  			}
   			{
   				"command": "vscode-rails-docs.railsDocsActionMailer",
   				"category": "Rails Docs",
