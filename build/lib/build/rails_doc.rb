@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 module Build
   class RailsDoc
     EXTENSION_JS_PATH = '/Users/philiplambok/Codes/code/vscode-rails-docs/extension.js'
@@ -16,7 +15,7 @@ module Build
     end
 
     def create_ext_command(variable, command, url)
-       "  let #{variable} = vscode.commands.registerCommand('#{command}', ()=> {\n" +
+      "  let #{variable} = vscode.commands.registerCommand('#{command}', ()=> {\n" +
         "    vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('#{url}'));\n" +
         "  })\n" +
         "  context.subscriptions.push(#{variable});\n"
@@ -53,8 +52,8 @@ module Build
         ext_code = create_ext_command(item[:variable], item[:command], item[:url])
         lines.push(ext_code)
       end
-      initial_line = "// Insert the build code in here"
-      updated_line = lines.join("")
+      initial_line = '// Insert the build code in here'
+      updated_line = lines.join('')
       gsub_file(EXTENSION_JS_PATH, initial_line, updated_line)
       # build the package.json
       lines = []
@@ -67,13 +66,13 @@ module Build
       last_line = last_line.delete("\n")
       lines.pop
       lines.push(last_line)
-      initial_event_line = "	\"activationEvents\": [" 
+      initial_event_line = "\t\"activationEvents\": ["
       gsub_file(PACKAGE_JSON_PATH, initial_event_line, lines.join(''))
       # the contributes or commands part
-      initial_line = "		\"commands\": ["
+      initial_line = "\t\t\"commands\": ["
       lines = []
       data.each do |item|
-        line = "			{\n" + 
+        line = "			{\n" +
                "				\"command\": \"vscode-rails-docs.#{item[:variable]}\",\n" +
                "				\"category\": \"Rails Docs\",\n" +
                "				\"title\": \"#{item[:class_name]}\"\n" +
