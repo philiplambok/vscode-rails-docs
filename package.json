@@ -4,7 +4,7 @@
 	"description": "Easily access Rails API docs pages from within VSCode.",
 	"publisher": "philiplambok",
 	"icon": "img/icon.png",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": "https://github.com/philiplambok/vscode-rails-docs",
 	"engines": {
 		"vscode": "^1.55.0"
